@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let kodeDigit = 22505197803;
+        let g = Math.floor((kodeDigit % 100000000000) / 10000000000);
+        let dd = Math.floor((kodeDigit % 10000000000) / 100000000);
+        let mm = Math.floor((kodeDigit % 100000000) / 1000000);
+        let yyy = Math.floor((kodeDigit % 1000000) / 100);
+        let nn = Math.floor((kodeDigit % 100));
+
+        switch (mm) {
+            case 1:
+                bulan = "Januari";
+                break;
+            case 2:
+                bulan = "Februari";
+                break;
+            case 3:
+                bulan = "Maret";
+                break;
+            case 4:
+                bulan = "April";
+                break;
+            case 5:
+                bulan = "Mei";
+                break;
+            case 6:
+                bulan = "Juni";
+                break;
+            case 7:
+                bulan = "Juli";
+                break;
+            case 8:
+                bulan = "Agustus";
+                break;
+            case 9:
+                bulan = "September";
+                break;
+            case 10:
+                bulan = "Oktober";
+                break;
+            case 11:
+                bulan = "November";
+                break;
+            case 12:
+                bulan = "Desember";
+                break;
+            default:
+                bulan = "Bulan tidak valid";
+                break;
+        }
+
+
+        console.log(g, dd, bulan, yyy, nn)
+    </script>
+</body>
+
+</html>
